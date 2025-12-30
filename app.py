@@ -3,7 +3,16 @@ from Story_generator_fn import generate_story_from_images , narrate_story
 from PIL import Image
 
 
-st.title('AI Story Generator from Images')
+import streamlit as st
+
+st.set_page_config(
+    page_title="AI Story Generator",
+    page_icon="📖"
+)
+
+st.title("AI Story Generator")
+
+
 st.markdown("Upload 1 to 10 images, choose a style and let AI write and narrate a story for you!")
 
 
@@ -63,6 +72,7 @@ if generate_button:
 
             except Exception as e:
                 st.error(f'An application error occured {e}')
+
 
 
 
