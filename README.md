@@ -3,6 +3,8 @@
 An AI-powered storytelling application that generates creative stories and narrations from images using Google Gemini AI and Text-to-Speech (gTTS).
 Upload images, choose a genre, and let AI turn visuals into engaging stories with voice narration.
 
+Live link: https://satyam-story-generator-0912.streamlit.app/
+
 🚀 Features
 
 🖼 Upload 1–10 images
