@@ -64,8 +64,6 @@ AI-Story-Generator/
 
 ├── Story_generator_fn.py      # AI + narration logic
 
-├── .env                       # API keys (not tracked)
-
 ├── .gitignore
 
 ├── requirements.txt
