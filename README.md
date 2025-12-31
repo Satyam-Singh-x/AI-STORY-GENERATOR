@@ -4,6 +4,8 @@ TaleForge is an AI-powered storytelling application that transforms images into 
 
 Built using Streamlit, Google Gemini, and Python, TaleForge blends creativity, design, and AI into a polished storytelling experience.
 
+Live-demo: https://ai-story-generator-satyam.streamlit.app/
+
 
 
 ✨ Features
