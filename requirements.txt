@@ -4,3 +4,4 @@ google-genai
 google-generativeai
 Pillow
 gtts
+reportlab
