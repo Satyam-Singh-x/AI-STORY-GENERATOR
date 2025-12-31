@@ -1,15 +1,32 @@
-📖 AI Story Generator from Images
+📖 TaleForge — AI Story Generator from Images
 
-An AI-powered storytelling application that generates creative stories and narrations from images using Google Gemini AI and Text-to-Speech (gTTS).
-Upload images, choose a genre, and let AI turn visuals into engaging stories with voice narration.
+TaleForge is an AI-powered storytelling application that transforms images into beautifully written stories with narration, themed UI, and downloadable story PDFs.
 
-Live link: https://ai-story-generator-satyam.streamlit.app/
+Built using Streamlit, Google Gemini, and Python, TaleForge blends creativity, design, and AI into a polished storytelling experience.
 
-🚀 Features
 
-🖼 Upload 1–10 images
 
-🎭 Multiple story styles:
+✨ Features
+
+✅ Generate stories from images using AI
+
+✅ Multiple genres (Comedy, Thriller, Fairy Tale, Mythology, etc.)
+
+✅ Beautiful animated UI with dynamic themes
+
+✅ AI-powered narration (Text-to-Speech)
+
+✅ Download stories as professionally formatted PDFs
+
+✅ Image previews inside PDFs
+
+✅ Automatic page numbering
+
+✅ Clean & responsive interface
+
+✅ Secure API handling using .env
+
+🎭 Supported Story Genres
 
 Comedy
 
@@ -31,188 +48,157 @@ Horror
 
 Morale
 
-✍️ AI-generated coherent story
+Each genre dynamically changes:
 
-🔊 Automatic audio narration
+Theme colors
 
-🇮🇳 Indian cultural context
+Animations
 
-⚡ Built with Streamlit (fast UI)
-
-🎧 Audio output in MP3 format
-
-🧠 How It Works
-
-User uploads images
-
-User selects a story genre
-
-Images + prompt → Gemini AI
-
-AI generates a story
-
-Story is converted to speech using gTTS
-
-Audio is played inside the app
-
-🗂 Project Structure
+Story tone
 
 
-AI-Story-Generator/
+
+🖥️ Tech Stack
+
+Layer	Technology
+
+Frontend	Streamlit
+
+AI Model	Google Gemini
+
+Image Processing	Pillow
+
+Text-to-Speech	gTTS
+
+PDF Generation	ReportLab
+
+Styling	CSS (embedded)
+
+Environment	Python + dotenv
+
+
+
+📁 Project Structure
+
+TaleForge/
+
 │
-├── app.py                     # Streamlit frontend
+├── app.py                     # Main Streamlit application
 
-├── Story_generator_fn.py      # AI + narration logic
-
-├── .gitignore
+├── Story_generator_fn.py      # AI logic & narration
 
 ├── requirements.txt
 
 └── README.md
 
-🔑 Environment Setup
 
-1️⃣ Create .env file
+⚙️ Installation & Setup
 
-GOOGLE_API_KEY=your_google_api_key_here
+1️⃣ Clone the Repository
 
+git clone https://github.com/Satyam-Singh-x/AI-STORY-GENERATOR.git
 
-⚠️ Never commit this file.
+cd AI-STORY-GENERATOR
 
-📦 Installation
+2️⃣ Install Dependencies
 
 pip install -r requirements.txt
 
-Required Packages
+3️⃣ Set Up Environment Variables
 
-streamlit
+Create a .env file:
 
-python-dotenv
+GOOGLE_API_KEY=your_gemini_api_key_here
 
-google-generativeai
 
-gTTS
+⚠️ Never upload your .env file to GitHub
 
-Pillow
+4️⃣ Run the App
 
-▶️ Run the App
 streamlit run app.py
 
-
-Then open:
-
-http://localhost:8501
-
-🧪 Example Usage
+🧠 How It Works
 
 Upload 1–10 images
 
-Select a story style
+Choose a story genre
 
-Click Generate Story and Narration
+AI analyzes images and generates a story
 
-Read the story
+Story is narrated using TTS
 
-Listen to the narration 🎧
+Story + images exported as a PDF
 
-🧩 Story Styles Supported
-Style	Description
+Theme changes dynamically based on genre
 
-Comedy	Light and humorous
+📄 PDF Features
 
-Thriller	Suspense and tension
+✔ Cover page with title
 
-Fairy Tale	Magical storytelling
+✔ Embedded images
 
-Mythological	Indian myth-inspired
+✔ Multi-page story formatting
 
-Sci-Fi	Futuristic stories
+✔ Page numbers
 
-Mystery	Detective & clues
+✔ Clean typography
 
-Adventure	Journey-based story
+🔊 Narration
 
-Romantic	Emotional & love
+Narration is generated using Google Text-to-Speech (gTTS) and plays directly in the browser.
 
-Horror	Dark & eerie
+🎨 UI Highlights
 
-Morale	Value-based moral story
+Dynamic theme switching
 
-🔊 Audio Narration
+Animated transitions
 
-Uses gTTS (Google Text-to-Speech)
+Dark sidebar with readable contrast
 
-Output format: MP3
+Responsive layout
 
-Automatically streamed in app
+Clean typography
 
-Natural voice narration
 
-🛠 Backend Logic
 
-Story Generation
+🔐 Security
 
-generate_story_from_images(images, style)
+API keys loaded via .env
 
-Narration
+.env should be added to .gitignore
 
-narrate_story(story_text)
+No credentials hardcoded
 
-⚠️ Common Errors & Fixes
+🚀 Future Improvements
 
-❌ API Key Error
-
-✔ Ensure .env file exists
-
-✔ API key is valid
-
-✔ Restart app after changes
-
-❌ Audio Not Playing
-
-✔ Ensure internet connection
-
-✔ gTTS installed correctly
-
-✔ Story text is not empty
-
-❌ Image Upload Error
-
-✔ Upload only PNG / JPG
-
-✔ Max 10 images
-
-🔐 Security Best Practices
-
-.env added to .gitignore
-
-API keys never hardcoded
-
-Safe for public GitHub repos
-
-🌟 Future Enhancements
-
-🎭 Multiple voice characters
-
-🎵 Background music
-
-🎬 Story-to-video
+🎧 Voice selection
 
 🌍 Multi-language support
 
-🤖 Emotion-based narration
+🧠 Story memory
 
-☁ Cloud deployment
+📱 Mobile optimization
 
-👨‍💻 Author
+🎬 Story-to-video generation
+
+☁️ Cloud deployment
+
+
+
+🧑‍💻 Author
 
 Satyam
 
-AI & ML Developer
+AI Developer | Storytelling Enthusiast | Full-Stack Learner
 
-Storytelling + Generative AI Enthusiast
+“Turning imagination into experience using AI.”
 
-📜 License
+⭐ If You Like This Project
 
-This project is for educational and personal use.
-Commercial usage requires API permission.
+⭐ Star this repository
+
+🍴 Fork it
+
+📢 Share it
+
+💡 Contribute ideas
